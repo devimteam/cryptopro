@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/l-vitaly/cryptopro"
-	"github.com/l-vitaly/gounit"
+	"github.com/devimteam/cryptopro"
+	"github.com/devimteam/gounit"
 )
 
 var certData = `
