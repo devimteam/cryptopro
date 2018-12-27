@@ -3,6 +3,12 @@ package cryptopro
 /*
 #include "common.h"
 
+extern BOOL WINAPI msgUpdateCallback(
+    const void *pvArg,
+    BYTE *pbData,
+    DWORD cbData,
+    BOOL fFinal);
+
 static BOOL WINAPI msgUpdateCallback_cgo(
     const void *pvArg,
     BYTE *pbData,
@@ -74,7 +80,9 @@ import (
 )
 
 var (
-	GOST_R3411 asn1.ObjectIdentifier = []int{1, 2, 643, 2, 2, 9}
+	GOST_R3411        asn1.ObjectIdentifier = []int{1, 2, 643, 2, 2, 9}
+	GOST_R3411_12_256 asn1.ObjectIdentifier = []int{1, 2, 643, 7, 1, 1, 2, 2}
+	GOST_R3411_12_512 asn1.ObjectIdentifier = []int{1, 2, 643, 7, 1, 1, 2, 3}
 )
 
 var (
